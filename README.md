@@ -17,12 +17,14 @@ Since this project uses a mock backend (JSON Server) and a frontend (Vite), you 
 Open your terminal in the project folder and run:
 ```bash
 npm install
+```
 Step 2: Start the Backend (Terminal 1)
 In your first terminal, start the JSON server. This must remain running for data to load.
 
-Bash
+```Bash
 
 npm run server
+```
 Port: Runs on http://localhost:3001
 
 Data Source: watches db.json
@@ -30,9 +32,10 @@ Data Source: watches db.json
 Step 3: Start the Frontend (Terminal 2)
 Open a new terminal tab or window and start the React application.
 
-Bash
+```Bash
 
 npm run dev
+```
 Port: Runs on http://localhost:5173
 
 Action: Open this link in your browser to view the app.
