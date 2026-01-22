@@ -17,20 +17,26 @@ Since this project uses a mock backend (JSON Server) and a frontend (Vite), you 
 Open your terminal in the project folder and run:
 ```bash
 npm install
-
-### Step 2: Start the Backend (Terminal 1)
+Step 2: Start the Backend (Terminal 1)
 In your first terminal, start the JSON server. This must remain running for data to load.
+
+Bash
 
 npm run server
 Port: Runs on http://localhost:3001
+
 Data Source: watches db.json
 
-### Step 3: Start the Frontend (Terminal 2)
+Step 3: Start the Frontend (Terminal 2)
 Open a new terminal tab or window and start the React application.
+
+Bash
 
 npm run dev
 Port: Runs on http://localhost:5173
+
 Action: Open this link in your browser to view the app.
+
 ✨ Features Implemented
 View All Blogs: Fetches articles from the backend using TanStack Query.
 
@@ -41,3 +47,12 @@ Create New Blog: A polished form (using shadcn/ui) to publish new articles.
 Delete Blog: Functionality to remove articles directly from the UI (Trash icon).
 
 Responsive Design: Optimized for different screen sizes with a clean, professional UI.
+
+📂 Project Structure
+src/components: UI components (BlogList, BlogDetail, Forms) and Shadcn/ui primitives.
+
+src/services: API functions (Axios calls to port 3001).
+
+src/types.ts: TypeScript interfaces matching the required schema.
+
+db.json: The mock database containing blog data.
